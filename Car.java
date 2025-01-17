@@ -27,9 +27,22 @@
      */
 public class Car {
     // Variables:
-
+    public static int VINnum = 10000;
+    public static char VINalph = 'A';
+    private String VIN;
+    private String make = "Zoomster";
+    private String model;
+    private String licensePlateNumber;
+    public static int totalCars;
+    public static int numCubester;
+    public static int numSpeedster;
+    public static int numRoadster;
+    public static double totalProfit;
     // Constructor:
-    
+    public Car()
+    {
+
+    }
 
     // Methods:
     /**
@@ -39,7 +52,7 @@ public class Car {
      * @return VIN -the VIN of the Car object
      */
     public String getVIN(){
-
+        
     }
     /**
      * [your Javadocs here]
