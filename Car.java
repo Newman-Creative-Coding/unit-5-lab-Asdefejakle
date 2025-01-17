@@ -27,8 +27,8 @@
      */
 public class Car {
     // Variables:
-    public static int VINnum = 10000;
-    public static char VINalph = 'A';
+    public static int VINnum = 9999;
+    public static int VINalph = 65;
     private String VIN;
     private String make = "Zoomster";
     private String model;
@@ -39,9 +39,23 @@ public class Car {
     public static int numRoadster;
     public static double totalProfit;
     // Constructor:
-    public Car()
+    public Car(String carModel, String licensePlate)
     {
-
+        VINnum = ++;
+        if (VINnum >= 100000){
+            VINnum = 10000;
+            VINalph++;
+        }
+        VIN = (char) VINalph + VINnum;
+        make = "Zoomster";
+        model = carModel;
+        licensePlateNumber = licensePlate;
+        totalCars++;
+        if (carModel == "")
+        public static int numCubester;
+        public static int numSpeedster;
+        public static int numRoadster;
+        public static double totalProfit;
     }
 
     // Methods:
