@@ -51,11 +51,17 @@ public class Car {
         model = carModel;
         licensePlateNumber = licensePlate;
         totalCars++;
-        if (carModel == "")
-        public static int numCubester;
-        public static int numSpeedster;
-        public static int numRoadster;
-        public static double totalProfit;
+        if (carModel == "Cubester"){
+        numCubester++;
+        totalProfit += 74000.0;
+            }
+        if (carModel == "Speedster"){
+        numSpeedster++;
+        totalProfit += 102000.0;
+        }
+        if (carModel == "Roadster"){
+        numRoadster++;
+        totalProfit += 206000.0;}
     }
 
     // Methods:
@@ -69,13 +75,19 @@ public class Car {
         return VIN;
     }
     /**
-     * [your Javadocs here]
+     * Returns the String model of a given Car object.
+     * Precondition: Car object must be initialized
+     * Postcondition: Returns String model accessed from the Car object
+     * @return model -the model of the Car object
      */
     public String getModel(){
 return model;
     }
     /**
-     * [your Javadocs here]
+     * Returns the String make of a given Car object.
+     * Precondition: Car object must be initialized
+     * Postcondition: Returns String make accessed from the Car object
+     * @return make -the make of the Car object
      */
     public String getMake(){
 return make;
