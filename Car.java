@@ -66,19 +66,19 @@ public class Car {
      * @return VIN -the VIN of the Car object
      */
     public String getVIN(){
-        
+        return VIN;
     }
     /**
      * [your Javadocs here]
      */
     public String getModel(){
-
+return model;
     }
     /**
      * [your Javadocs here]
      */
     public String getMake(){
-
+return make;
     }
     /**
      * Sets the String license plate number of a given Car object.
@@ -87,21 +87,21 @@ public class Car {
      * @param plateNumber -the customer's String license plate number
      */
     public void setPlateNumber(String plateNumber){
-
+licensePlateNumber = plateNumber;
     }
     /**
      * Returns the total profits from cars produced by my factory.
      * @return totalProfits -the total sale price of all Car objects created
      */
     public double getTotalProfits(){
-
+return totalProfit;
     }
     /**
      * Returns the total number of cars produced by my factory.
      * @return totalCars -the total number of Car objects created
      */
     public int getTotalCars(){
-
+return totalCars;
     }
     /**
      * Returns the  number of Speedster cars produced by my factory.
@@ -109,7 +109,7 @@ public class Car {
      * with model "Speedster" created
      */
     public int getTotalSpeedsters(){
-
+return numSpeedster;
     }
     /**
      * Returns the  number of Roadster cars produced by my factory.
@@ -117,7 +117,7 @@ public class Car {
      * with model "Roadster" created
      */
     public int getTotalRoadsters(){
-
+return numRoadster;
     }
     /**
      * Returns the  number of Cubester cars produced by my factory.
@@ -125,7 +125,7 @@ public class Car {
      * with model "Cubester" created
      */
     public int getTotalCubesters(){
-
+return numCubester;
     }
 
 }
