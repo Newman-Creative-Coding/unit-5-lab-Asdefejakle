@@ -41,9 +41,9 @@ public class Car {
     // Constructor:
     public Car(String carModel, String licensePlate)
     {
-        VINnum = ++;
+        VINnum++;
         if (VINnum >= 100000){
-            VINnum = 10000;
+            VINnum = 9999;
             VINalph++;
         }
         VIN = (char) VINalph + VINnum;
